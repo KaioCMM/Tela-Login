@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+
+  /*Estilo 1*/
+  --primary: rgb(56, 204, 76);
+  --secondary: green;
+  --background-01: rgb(43, 36, 49);
+  --background-02: rgb(50, 41, 59);
+  --text: white;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* A div filho não vai ultrapassar a div pai*/
+    font-family: "Inter", sans-serif;
+    
+}
+
+main{
+  width: 100vw;
+  height: 98vh;
+  background: var(--background-01);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+
+}
+
+.left-login{
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h1{
+    color:var(--text);
+    }
+}
+
+.right-login{
+  width: 50vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login{
+  width: 60%;
+  background: var(--background-02);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1rem;
+
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.356);
+
+  & h1{
+    color: var(--text);
+    font-weight: 800;
+    margin: 0;
+  }
+
+}
+
+.textfield{
+   
+  width: 70%;
+
+  & input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    
+    margin: 0.5rem 0rem;
+    background: var(--background-01);
+    color: var(--text);
+    font-size: 12pt;
+
+
+    outline: none;
+    
+  }
+
+
+  & .btn-login{
+
+    margin-top: 1rem;
+
+    width: 100%;
+    padding: 1rem 0rem;
+    
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    cursor: pointer;
+    background: var(--primary);
+    color: var(--text);
+
+    font-weight: 600;
+    font-size: 12pt;
+
+    transition: all 0.4s;
+
+    &:hover{
+      opacity: 0.8;
+    }
+    &:active{
+      opacity: 0.5;
+    }
+
+
+  }
+
+}
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  background: var(--background-01);
+
+  width: 100vw;
+  height: 2vh;
+
+  color: var(--text);
+  
+  & .footer-copy{
+    opacity: 0.4;
+  }
+}
+
+
+
+
+
+
+
+
+/*BOTÃO=================*/
+
+
+
+/*=========================*/
